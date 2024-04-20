@@ -1,0 +1,125 @@
+:root {
+    --color-white: #EEEEEE;
+    --color-black: #222831;
+    --color-orange: #E3651D;
+    --color-green: #03C988;
+    --color-g: #7A0BC0;
+}
+html,body {
+    height: 100%;
+}
+body {
+    background-color: #222831;
+    margin: 0;
+    box-sizing: border-box;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-black);
+    & .con-menubar {
+        display: flex;
+        gap: 1rem;
+        margin: 0.25rem;
+        padding: 1rem;
+
+
+        & li {
+            background-color: #2d3540;
+            list-style-type: none;
+            border-radius: 13px;
+            padding: 0.25rem;
+        }
+        & a{
+            text-decoration: none;
+            color: var(--color-orange);
+            transition: 1s;
+            border-bottom: 0px solid var(--color-green);
+        }
+        & a:hover {
+            font-weight: 700;
+            border-bottom: 3px solid var(--color-green);
+            color: var(--color-green);
+            transition: 0.7s;
+        }
+    }
+    & .nav-logo {
+        display: flex;
+        & h3 {
+            color: #fff;
+        }
+    }
+}
+.parallax {
+    background-image: url("https://www.jetsetter.com//uploads/sites/7/2018/04/KJ-MC0X3-1380x1035.jpeg");
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-mask-image: linear-gradient(black,black,black, transparent);
+    mask-image: linear-gradient(black,black,transparent);
+        & .para-content{   
+            position: absolute;
+            left: 0%;
+            top: -10%;
+            transform: translate(50%,50%);
+            backdrop-filter: blur(9px);
+            background-color: #ffffff45;
+            margin: 1rem;
+            width: 50%;
+            height: 63%;
+                & .para_con {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    padding: 1rem;
+        
+        
+                    
+                }
+        }
+}
+
+.content-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color-black);
+    font-size: 0.85em;
+    font-family: serif;
+
+    & .follow-ch {
+        display: flex;
+        gap: 1rem;
+    }
+    & a {text-decoration: none;color: #fff;transition: 0.7s;}
+    & a:hover {color: var(--color-green); transition: 0.6s;}
+        & .ch-con {
+            display: flex;
+            gap: 1rem;
+            list-style-type: none;
+        }
+
+}
+.parallax2 {
+    background-image: url("https://www.jetsetter.com//uploads/sites/7/2018/04/KJ-MC0X3-1380x1035.jpeg");
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-mask-image: linear-gradient(transparent,black,black,black);
+    mask-image: linear-gradient(transparent,black,black);
+}
+
+
